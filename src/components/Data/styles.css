@@ -1,0 +1,10 @@
+.Data textarea {
+    width: 599px;
+    height: 252px;
+    background: #464545;
+    border-radius: 20px;
+    padding: 8px 16px;
+    resize: none;
+    outline: none;
+    border: none;
+}
