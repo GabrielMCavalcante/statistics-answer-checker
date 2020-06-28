@@ -1,0 +1,22 @@
+.ResultOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 110px;
+    margin-bottom: 20px;
+    background: #464545;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.ResultOption span {
+    font-size: 1.6rem;
+}
+
+.ResultOption.Selected {
+    background: darkorange;
+    color: black;
+}
