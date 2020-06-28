@@ -4,13 +4,14 @@ import './App.css'
 
 // Components
 import Home from './Home'
+import Results from './Results'
 
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/" component={Home}/>
-        {/* <Route path="/results" component={Results}/> */}
+        <Route exact path="/" component={Home}/>
+        <Route path="/results" component={Results}/>
         <Redirect to="/"/>
       </Switch>
     </div>
