@@ -1,0 +1,7 @@
+.Results {
+    display: flex;
+}
+
+.Results .ResultScreen {
+    flex: 1;
+}
