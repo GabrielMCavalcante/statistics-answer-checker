@@ -1,0 +1,36 @@
+.MainTable {
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    background: #464545;
+    border-radius: 20px;
+}
+
+.MainTable, .MainTable tr, .MainTable td, .MainTable th {
+    border: 1px solid #292828;
+    border-spacing: 0;
+}
+
+.MainTable .Header th {
+    padding: 16px 16px;
+}
+
+.MainTable tr:not(.Header) td {
+    padding: 10px;
+}
+
+.MainTable .Header :first-child {
+    border-top-left-radius: 20px;
+}
+
+.MainTable .Header :last-child {
+    border-top-right-radius: 20px;
+}
+
+.MainTable :last-child :first-child {
+    border-bottom-left-radius: 20px;
+}
+
+.MainTable :last-child :last-child {
+    border-bottom-right-radius: 20px;
+}
