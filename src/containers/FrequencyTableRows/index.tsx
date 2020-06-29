@@ -9,10 +9,16 @@ function FrequencyTableRows() {
 
     const rows: JSX.Element[] = []
 
-    for(let i=0; i < unique_values.length; i++)
-        rows.push(<FrequencyTableRow value={unique_values[i]} freq={absolute_freq[i]} />) 
+    for (let i = 0; i < unique_values.length; i++)
+        rows.push((
+            <FrequencyTableRow
+                key={i}
+                value={unique_values[i]}
+                freq={absolute_freq[i]}
+            />
+        ))
 
-    return <>{ rows }</>
+    return <>{rows}</>
 }
 
 export default FrequencyTableRows

@@ -22,10 +22,16 @@ function ExtraInfoTableRows() {
     ]
 
     info.forEach(i => {
-        rows.push(<ExtraInfoTableRow label={i.label} value={i.value}/>)
+        rows.push((
+            <ExtraInfoTableRow
+                key={info.indexOf(i)}
+                label={i.label}
+                value={i.value}
+            />
+        ))
     })
 
-    return <>{ rows }</>
+    return <>{rows}</>
 }
 
 export default ExtraInfoTableRows

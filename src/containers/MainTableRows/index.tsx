@@ -24,7 +24,7 @@ function MainTableRows() {
         <>
             {
                 rows.map(row => (
-                    <MainTableRow {...row}/>
+                    <MainTableRow key={rows.indexOf(row)} {...row}/>
                 ))
             }
         </>

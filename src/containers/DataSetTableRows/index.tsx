@@ -13,11 +13,11 @@ function DataSetTableRows() {
         let td = []
         let v = row
         for (let d = 0; d < columns; d++) {
-            td.push(<td>{table[v] ? String(table[v]).padStart(2, '0') : '-'}</td>)
+            td.push(<td key={d}>{table[v] ? String(table[v]).padStart(2, '0') : '-'}</td>)
             v += lines
         }
         rows.push((
-            <DataSetTableRow data={td} />
+            <DataSetTableRow key={row} data={td} />
         ))
     }
 
