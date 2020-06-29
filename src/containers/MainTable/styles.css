@@ -19,18 +19,18 @@
     padding: 10px;
 }
 
-.MainTable .Header :first-child {
+.MainTable tbody .Header :first-child {
     border-top-left-radius: 20px;
 }
 
-.MainTable .Header :last-child {
+.MainTable tbody .Header :last-child {
     border-top-right-radius: 20px;
 }
 
-.MainTable :last-child :first-child {
+.MainTable tbody :last-child :first-child {
     border-bottom-left-radius: 20px;
 }
 
-.MainTable :last-child :last-child {
+.MainTable tbody :last-child :last-child {
     border-bottom-right-radius: 20px;
 }
