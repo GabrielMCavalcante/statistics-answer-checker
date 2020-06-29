@@ -8,16 +8,18 @@ import './styles.css'
 function MainTable() {
     return (
         <table className="MainTable">
-            <tr className="Header">
-                <th>Classes</th>
-                <th>Data</th>
-                <th>Xi</th>
-                <th>Fi</th>
-                <th>Fr</th>
-                <th>Fac</th>
-                <th>Facr</th>
-            </tr>
-            <MainTableRows />
+            <tbody>
+                <tr className="Header">
+                    <th>Classes</th>
+                    <th>Data</th>
+                    <th>Xi</th>
+                    <th>Fi</th>
+                    <th>Fr</th>
+                    <th>Fac</th>
+                    <th>Facr</th>
+                </tr>
+                <MainTableRows />
+            </tbody>
         </table>
     )
 }

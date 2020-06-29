@@ -4,12 +4,14 @@ import React from 'react'
 import ExtraInfoTableRows from 'containers/ExtraInfoTableRows'
 
 // CSS styles
-import './styles.css' 
+import './styles.css'
 
 function ExtraInfoTable() {
     return (
         <table className="ExtraInfoTable">
-            <ExtraInfoTableRows />
+            <tbody>
+                <ExtraInfoTableRows />
+            </tbody>
         </table>
     )
 }

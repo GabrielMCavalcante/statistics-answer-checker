@@ -9,7 +9,9 @@ import './styles.css'
 function DataSetTable() {
     return (
         <table className="DataSetTable">
-            <DataSetTableRows />
+            <tbody>
+                <DataSetTableRows />
+            </tbody>
         </table>
     )
 }

@@ -9,11 +9,13 @@ import './styles.css'
 function FrequencyTable() {
     return (
         <table className="FrequencyTable">
-            <tr>
-                <th>Value</th>
-                <th>Frequency</th>
-            </tr>
-            <FrequencyTableRows />
+            <tbody>
+                <tr>
+                    <th>Value</th>
+                    <th>Frequency</th>
+                </tr>
+                <FrequencyTableRows />
+            </tbody>
         </table>
     )
 }
