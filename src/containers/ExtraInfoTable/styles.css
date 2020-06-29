@@ -1,0 +1,11 @@
+.ExtraInfoTable {
+    border: 3px solid #1a1919;
+    border-radius: 20px;
+    font-size: 25px;
+    background: #464545;
+    margin: auto;
+}
+
+.ExtraInfoTable td {
+    padding: 1px 10px;
+}
