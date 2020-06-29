@@ -1,0 +1,39 @@
+.FrequencyTable {
+    font-size: 20px;
+    background: #464545;
+    border: 3px solid #1a1919;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.FrequencyTable, 
+.FrequencyTable tr, 
+.FrequencyTable td, 
+.FrequencyTable th {
+    border: 1px solid #292828;
+    border-spacing: 0;
+}
+
+.FrequencyTable th,
+.FrequencyTable td {
+    padding: 8px;
+}
+
+.FrequencyTable :first-child :first-child {
+    border-top-left-radius: 20px;
+    padding: 8px 32px;
+}
+
+.FrequencyTable :first-child :last-child {
+    border-top-right-radius: 20px;
+    padding: 8px 16px;
+}
+
+.FrequencyTable :last-child :first-child {
+    border-bottom-left-radius: 20px;
+}
+
+.FrequencyTable :last-child :last-child {
+    border-bottom-right-radius: 20px;
+}
