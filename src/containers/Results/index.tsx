@@ -47,11 +47,36 @@ function Results(props: any) {
                 facr: info.accumulated_relative_freq
             }
 
+            const dataSetTableInfo = {
+                table: info.table,
+                lines: info.lines,
+                columns: info.columns
+            }
+
+            const frequencyTableInfo = {
+                absolute_freq: info.absolute_freq,
+                unique_values: info.unique_values
+            }
+
+            const extraInfoTableInfo = {
+                total_values: info.total_values,
+                total_amplitude: info.total_amplitude,
+                amostral_amplitude: info.amostral_amplitude,
+                classes: info.sturges_k,
+                class_interval: info.class_interval,
+                average: info.average,
+                median: info.median,
+                fashion: info.fashion,
+                variance: info.variance,
+                standard_deviation: info.standard_deviation,
+                variation_coefficient: info.variation_coefficient
+            }
+
             setOptionsConfig([
                 { title: 'Generated Table', content: <MainTable info={mainTableInfo} /> },
-                { title: 'Data Set', content: <DataSetTable /> },
-                { title: 'Absolute Frequency', content: <FrequencyTable /> },
-                { title: 'Extra Information', content: <ExtraInfoTable /> }
+                { title: 'Data Set', content: <DataSetTable info={dataSetTableInfo}/> },
+                { title: 'Absolute Frequency', content: <FrequencyTable info={frequencyTableInfo}/> },
+                { title: 'Extra Information', content: <ExtraInfoTable info={extraInfoTableInfo}/> }
             ])
         }
     }, [info])
