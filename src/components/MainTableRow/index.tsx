@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { formatValue } from 'utils/ValueFormatter'
+
 interface RowData {
     class: number,
     interval: number[],
@@ -13,18 +15,17 @@ interface RowData {
 function MainTableRow(rowData: RowData) {
 
     const parsedInterval =
-        String(rowData.interval[0]).padStart(2, '0') +
-        ' |- ' +
-        String(rowData.interval[0]).padStart(2, '0')
+        formatValue(rowData.interval[0]) + ' |- ' + formatValue(rowData.interval[1])
 
-    const parsedFi = String(rowData.fi).padStart(2, '0')
-    const parsedFr = rowData.fr.toFixed(2) + '%'
-    const parsedFacr = rowData.facr.toFixed(2) + '%'
+    const parsedXi = formatValue(rowData.xi)
+    const parsedFi = formatValue(rowData.fi)
+    const parsedFr = formatValue(rowData.fr) + '%'
+    const parsedFacr = formatValue(rowData.facr) + '%'
 
     const rowLabels = [
         rowData.class,
         parsedInterval,
-        rowData.xi,
+        parsedXi,
         parsedFi,
         parsedFr,
         rowData.fac,
