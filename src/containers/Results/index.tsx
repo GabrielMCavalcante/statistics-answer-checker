@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
 // Components
@@ -14,45 +14,73 @@ import ExtraInfoTable from 'containers/ExtraInfoTable'
 // CSS styles
 import './styles.css'
 
-const options: JSX.Element[] = []
+// Interfaces
+import GeneratedData from 'containers/Home/GeneratedData/interface'
 
-const optionsConfig = [
-    { title: 'Generated Table', content: <MainTable /> },
-    { title: 'Data Set', content: <DataSetTable /> },
-    { title: 'Absolute Frequency', content: <FrequencyTable /> },
-    { title: 'Extra Information', content: <ExtraInfoTable /> }
-]
+type OptionsConfig = { title: string, content: JSX.Element }[]
 
 function Results(props: any) {
 
+    const [info, setInfo] = useState<GeneratedData>()
+    const [optionsConfig, setOptionsConfig] = useState<OptionsConfig>()
+    const [options, setOptions] = useState<JSX.Element[]>()
+
     const goBack = useCallback(() => {
-        sessionStorage.removeItem('jsonTable')
+        sessionStorage.removeItem('generatedInfo')
         props.history.push('/')
     }, []) // eslint-disable-line
 
-    // useEffect(() => {
-    //     if (!sessionStorage.getItem('jsonTable')) goBack()
-    // }, [goBack])
+    useEffect(() => {
+        if (!sessionStorage.getItem('generatedInfo')) goBack()
+        else setInfo(JSON.parse(sessionStorage.getItem('generatedInfo')!))
+    }, []) // eslint-disable-line
 
-    optionsConfig.forEach(option => {
-        options.push((
-            <Option
-                title={option.title}
-                content={option.content}
-                returnToMenu={goBack}
-            />
-        ))
-    })
+    useEffect(() => {
+        if (info) {
+            const mainTableInfo = {
+                classes: info.sturges_k,
+                interval: info.intervals,
+                xi: info.medium_value,
+                fi: info.interval_freq,
+                fr: info.relative_freq,
+                fac: info.accumulated_freq,
+                facr: info.accumulated_relative_freq
+            }
+
+            setOptionsConfig([
+                { title: 'Generated Table', content: <MainTable info={mainTableInfo} /> },
+                { title: 'Data Set', content: <DataSetTable /> },
+                { title: 'Absolute Frequency', content: <FrequencyTable /> },
+                { title: 'Extra Information', content: <ExtraInfoTable /> }
+            ])
+        }
+    }, [info])
+
+    useEffect(() => {
+        if (optionsConfig) {
+            const initOptions: JSX.Element[] = []
+            optionsConfig.forEach(option => {
+                initOptions.push((
+                    <Option
+                        title={option.title}
+                        content={option.content}
+                        returnToMenu={goBack}
+                    />
+                ))
+            })
+            setOptions(initOptions)
+        }
+    }, [optionsConfig]) // eslint-disable-line
 
     return (
         <div className="Results">
             <ResultOptions history={props.history} />
             <div className="ResultScreen">
                 <Switch>
-                    <Route path="/results/1" render={() => options[0]} />
-                    <Route path="/results/2" render={() => options[1]} />
-                    <Route path="/results/3" render={() => options[2]} />
-                    <Route path="/results/4" render={() => options[3]} />
+                    <Route path="/results/1" render={() => options && options[0]} />
+                    <Route path="/results/2" render={() => options && options[1]} />
+                    <Route path="/results/3" render={() => options && options[2]} />
+                    <Route path="/results/4" render={() => options && options[3]} />
                     <Redirect to="/results/1" />
                 </Switch>
             </div>
