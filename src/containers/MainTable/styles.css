@@ -27,6 +27,14 @@
     border-top-right-radius: 20px;
 }
 
+.MainTable tbody tr:nth-child(even):not(.Header) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.MainTable tbody tr:not(.Header):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .MainTable tbody :last-child :first-child {
     border-bottom-left-radius: 20px;
 }

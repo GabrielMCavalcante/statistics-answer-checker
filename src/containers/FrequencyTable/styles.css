@@ -20,6 +20,11 @@
     padding: 8px;
 }
 
+.FrequencyTable tbody tr {
+    border: none;
+    border-spacing: 0;
+}
+
 .FrequencyTable tbody :first-child :first-child {
     border-top-left-radius: 20px;
     padding: 8px 32px;
@@ -28,6 +33,14 @@
 .FrequencyTable tbody :first-child :last-child {
     border-top-right-radius: 20px;
     padding: 8px 16px;
+}
+
+.FrequencyTable tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.FrequencyTable tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .FrequencyTable tbody :last-child :first-child {
