@@ -5,7 +5,17 @@ import MainTableRows from 'containers/MainTableRows'
 // CSS styles
 import './styles.css'
 
-function MainTable() {
+type Info = {
+    classes: number,
+    interval: number[][],
+    xi: number[],
+    fi: number[],
+    fr: number[],
+    fac: number[],
+    facr: number[]
+}
+
+function MainTable(props: { info: Info }) {
     return (
         <table className="MainTable">
             <tbody>
@@ -18,7 +28,7 @@ function MainTable() {
                     <th>Fac</th>
                     <th>Facr</th>
                 </tr>
-                <MainTableRows />
+                <MainTableRows info={props.info}/>
             </tbody>
         </table>
     )
