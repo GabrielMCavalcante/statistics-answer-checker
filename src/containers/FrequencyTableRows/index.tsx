@@ -3,9 +3,14 @@ import React from 'react'
 // Components
 import FrequencyTableRow from 'components/FrequencyTableRow'
 
-function FrequencyTableRows() {
-    const absolute_freq = [6, 5, 5, 4, 2, 5, 4, 4, 5]
-    const unique_values = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+type RowData = {
+    absolute_freq: number[],
+    unique_values: number[]
+}
+
+function FrequencyTableRows(props: { info: RowData }) {
+    const absolute_freq = props.info.absolute_freq
+    const unique_values = props.info.unique_values
 
     const rows: JSX.Element[] = []
 

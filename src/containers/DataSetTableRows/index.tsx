@@ -3,10 +3,16 @@ import React from 'react'
 // Components
 import DataSetTableRow from 'components/DataSetTableRow'
 
-function DataSetTableRows() {
-    const table = [1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 9]
-    const lines = 5
-    const columns = 8
+type RowData = {
+    table: number[],
+    lines: number,
+    columns: number
+}
+
+function DataSetTableRows(props: {info: RowData}) {
+    const table = props.info.table
+    const lines = props.info.lines
+    const columns = props.info.columns
     const rows: JSX.Element[] = []
 
     for (let row = 0; row < lines; row++) {
