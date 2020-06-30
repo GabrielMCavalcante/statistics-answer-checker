@@ -238,8 +238,10 @@ export default class {
                     f_count++
             }
 
-            if (Format.formatEquality(interval[1], this.table[this.total_values - 1]))
-                f_count++
+            if (Format.formatEquality(interval[1], this.table[this.total_values - 1])) {
+                const total = this.table.filter(t => parseFloat(t.toFixed(2)) === parseFloat(interval[1].toFixed(2)))
+                f_count += total.length
+            }
 
             this.interval_freq.push(f_count)
         }
@@ -260,14 +262,17 @@ export default class {
                     f_count++
             }
 
-            if (Format.formatEquality(interval[1], this.table[this.total_values - 1]))
-                f_count++
+            if (Format.formatEquality(interval[1], this.table[this.total_values - 1])) {
+                const total = this.table.filter(t => parseFloat(t.toFixed(2)) === parseFloat(interval[1].toFixed(2)))
+                f_count += total.length
+            }
 
             this.accumulated_freq.push(f_count)
         }
     }
 
     private get_accumulated_relative_freq() {
+        console.log(this.accumulated_freq)
         for (const freq of this.accumulated_freq)
             this.accumulated_relative_freq.push((100 * parseFloat(String(freq / this.total_values))))
     }
