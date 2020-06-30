@@ -6,7 +6,12 @@ import FrequencyTableRows from 'containers/FrequencyTableRows'
 // CSS styles
 import './styles.css'
 
-function FrequencyTable() {
+type Info = {
+    absolute_freq: number[],
+    unique_values: number[]
+}
+
+function FrequencyTable(props: { info: Info}) {
     return (
         <table className="FrequencyTable">
             <tbody>
@@ -14,7 +19,7 @@ function FrequencyTable() {
                     <th>Value</th>
                     <th>Frequency</th>
                 </tr>
-                <FrequencyTableRows />
+                <FrequencyTableRows info={props.info}/>
             </tbody>
         </table>
     )

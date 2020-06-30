@@ -6,11 +6,17 @@ import DataSetTableRows from 'containers/DataSetTableRows'
 // CSS styles
 import './styles.css'
 
-function DataSetTable() {
+type Info = {
+    table: number[],
+    lines: number,
+    columns: number
+}
+
+function DataSetTable(props: { info: Info }) {
     return (
         <table className="DataSetTable">
             <tbody>
-                <DataSetTableRows />
+                <DataSetTableRows info={props.info}/>
             </tbody>
         </table>
     )
