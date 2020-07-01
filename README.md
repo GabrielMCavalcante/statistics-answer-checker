@@ -40,7 +40,7 @@ To use this web application, go to this [link](https://google.com) and then foll
 ![How to use](src/github/results.gif)
 
 [Back To The Top](#statistics-answer-checker)<br>
-[Back To Table of Contents](#index)
+[Back To Index](#index)
 
 ### License
 
@@ -67,7 +67,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [Back To The Top](#statistics-answer-checker)<br>
-[Back To Table of Contents](#index)
+[Back To Index](#index)
 
 ### About
 
@@ -76,4 +76,4 @@ SOFTWARE.
 - LinkedIn - [Gabriel Cavalcante](https://www.linkedin.com/in/gabriel-cavalcante-4182061a2)
 
 [Back To The Top](#statistics-answer-checker)<br>
-[Back To Table of Contents](#index)
+[Back To Index](#index)
