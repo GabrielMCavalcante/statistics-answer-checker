@@ -90,10 +90,10 @@ function Home(props: any) {
             <div className="UserData">
                 <h3>Copy and paste your data on the field below</h3>
                 <Data />
+                <Button onclick={createTable}>Create Table</Button>
                 <p>The data has to be separated by commas</p>
                 <p>For decimal values, use a dot (.)</p>
             </div>
-            <Button onclick={createTable}>Create Table</Button>
         </div>
     )
 }
