@@ -10,6 +10,11 @@ only make things harder and passive of errors, but make statistics look like a m
 With this application, you can easily check out all the relevant information about the
 exercise given set of data, by simply passing it to the application. From a simple table of absolute frequencies of each individual data to a complete table of absolute and relative frequencies, you will have all the information you need.
 
+### Languages
+Read this file in your preferred language:
+- [English](README.md)
+- [Português](README.pt.md)
+
 ### Main technologies used
 
 - React
