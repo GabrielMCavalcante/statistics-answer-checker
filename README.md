@@ -37,7 +37,7 @@ To install this application project on your local machine, follow the steps belo
 
 To use this web application, go to this [link](https://google.com) and then follow the gif steps below.
 
-![How to use](img/results.gif)
+![How to use](src/github/results.gif)
 
 [Back To The Top](#statistics-answer-checker)<br>
 [Back To Table of Contents](#index)
