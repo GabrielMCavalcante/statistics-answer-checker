@@ -2,7 +2,7 @@
 
 ![Project Image](src/github/frontpage.jpg)
 
-> This is a project to help you build tables that gives you information about data.
+> This is a project to help you check your answers for statistics exercises.
 
 This web application was built thinking of how boring it can be to check every answer
 of a statistics exercise, by having to manually revise all calculations, which can not
