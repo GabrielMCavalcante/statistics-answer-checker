@@ -26,3 +26,374 @@ body {
 ::-webkit-scrollbar-thumb {
   background: darkorange;
 }
+
+@media (max-width: 400px) {
+  .Option .TableArea {
+    width: 112% !important;
+    position: relative !important;
+    left: -15px !important;
+  }
+}
+
+@media (max-width: 414px) {
+  .Home header, .UserData {
+    padding: 15px !important;
+  }
+  .Home header h3 {
+    display: none !important;
+  }
+  .UserData {
+    margin-top: -56px !important;
+  }
+  .UserData .Data {
+    margin-bottom: 15px !important;
+  }
+  .UserData .Data textarea {
+    width: 100% !important;
+  }
+  .UserData p {
+    font-size: 0.9rem !important;
+  }
+  .Results {
+    flex-direction: column !important;
+  }
+  .ResultOptions {
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .ResultOption {
+    width: 75px !important;
+    height: 75px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 20px !important;
+  }
+  .Option {
+    width: 80% !important;
+    height: 80% !important;
+    padding-top: 0 !important;
+    margin: -20px auto !important;
+  }
+  .Option header h1 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (max-width: 369px) {
+  .ResultOption {
+    width: 85px !important;
+  }
+}
+
+@media (min-width: 370px) {
+  .ResultOption {
+    width: 90px !important;
+  }
+}
+
+@media (min-width: 400px) {
+  .Option header h1 {
+    font-size: 1.7rem !important;
+  }
+  .ResultOption {
+    width: 100px !important;
+  }
+}
+
+@media (min-height: 500px) {
+  .Option {
+    padding: 0px !important;
+  }
+  .Option .TableArea {
+    max-height: 350px !important;
+  }
+}
+
+@media (min-height: 600px) and (max-height: 656px) {
+  .Option .TableArea {
+    max-height: 430px !important;
+  }
+}
+
+@media (min-height: 660px) {
+  .Option .TableArea {
+    max-height: 455px !important;
+  }
+}
+
+@media (min-height: 700px) {
+  .Option .TableArea {
+    max-height: 505px !important;
+  }
+}
+
+@media (min-height: 800px) {
+  .Option .TableArea {
+    max-height: 600px !important;
+  }
+}
+
+@media (min-width: 760px) {
+  .Home header, .UserData {
+    padding: 15px !important;
+  }
+  .Home header h3 {
+    display: none !important;
+  }
+  .UserData {
+    margin-top: -56px !important;
+  }
+  .UserData .Data {
+    margin-bottom: 15px !important;
+  }
+  .UserData .Data textarea {
+    width: 100% !important;
+  }
+  .UserData p {
+    font-size: 0.9rem !important;
+  }
+  .Results {
+    flex-direction: column !important;
+  }
+  .ResultOptions {
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .ResultOption {
+    width: 185px !important;
+    height: 75px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 20px !important;
+  }
+  .Option {
+    width: 80% !important;
+    height: 80% !important;
+    padding-top: 0 !important;
+    margin: -20px auto !important;
+  }
+  .Option header h1 {
+    font-size: 3.4rem !important;
+  }
+  .Option .TableArea {
+    width: 112% !important;
+    max-height: 705px !important;
+    position: relative !important;
+    left: -35px !important;
+  }
+  table tbody tr {
+    font-size: 2.5rem !important;
+  }
+  .Button {
+    width: 100% !important;
+    height: 55px !important;
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .Home header, .UserData {
+    padding: 15px !important;
+  }
+  .Home header h3 {
+    display: none !important;
+  }
+  .UserData {
+    margin-top: -56px !important;
+  }
+  .UserData .Data {
+    margin-bottom: 15px !important;
+  }
+  .UserData .Data textarea {
+    width: 100% !important;
+  }
+  .UserData p {
+    font-size: 0.9rem !important;
+  }
+  .Results {
+    flex-direction: column !important;
+  }
+  .ResultOptions {
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .ResultOption {
+    width: 250px !important;
+    height: 75px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 20px !important;
+  }
+  .ResultOption span {
+    font-size: 2.5rem !important;
+  }
+  .Option {
+    width: 80% !important;
+    height: 80% !important;
+    padding-top: 0 !important;
+    margin: -20px auto !important;
+  }
+  .Option header h1 {
+    font-size: 3.4rem !important;
+  }
+  .Option .TableArea {
+    width: 116% !important;
+    max-height: 1040px !important;
+    position: relative !important;
+    left: -65px !important;
+  }
+  table tbody tr {
+    font-size: 2.5rem !important;
+  }
+  table tbody tr td {
+    padding: 10px 40px !important;
+  }
+  .Button {
+    width: 100% !important;
+    height: 55px !important;
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1366px) and (min-height: 657px) {
+  .Home header, .UserData {
+    padding: 0 !important;
+  }
+  .Home header h3 {
+    display: block !important;
+  }
+  .UserData {
+    margin-top: 0 !important;
+  }
+  .UserData .Data {
+    margin-bottom: 0 !important;
+  }
+  .UserData .Data textarea {
+    width: 599px !important;
+  }
+  .UserData p {
+    font-size: 1rem !important;
+  }
+  .Results {
+    flex-direction: row !important;
+  }
+  .ResultOptions {
+    margin: 75px auto 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .ResultOption {
+    width: 90px !important;
+    height: 110px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+  .ResultOption span {
+    font-size: 1.6rem !important;
+  }
+  .Option {
+    width: calc(100% - 100px) !important;
+    height: 100% !important;
+    margin: 20px auto !important;
+  }
+  .Option header h1 {
+    font-size: auto !important;
+  }
+  .Option .TableArea {
+    width: 100% !important;
+    max-height: 400px !important;
+    position: relative !important;
+    left: 0 !important;
+  }
+  table tbody tr {
+    font-size: inherit !important;
+  }
+  table tbody tr td {
+    padding: 10px !important;
+  }
+  .Button {
+    width: 220px !important;
+    height: 42px !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .Home header h3 {
+    display: block !important;
+  }
+  .UserData {
+    margin-top: 0 !important;
+  }
+  .UserData .Data {
+    margin-bottom: 0 !important;
+  }
+  .UserData .Data textarea {
+    width: 699px !important;
+    font-size: 1.5rem !important;
+  }
+  .UserData p {
+    font-size: 1.5rem !important;
+  }
+  .Results {
+    flex-direction: row !important;
+  }
+  .ResultOptions {
+    margin: 100px auto 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .ResultOption {
+    width: 100px !important;
+    height: 150px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+  .ResultOption span {
+    font-size: 2rem !important;
+  }
+  .Option {
+    width: calc(100% - 100px) !important;
+    height: 100% !important;
+    margin: 20px auto !important;
+  }
+  .Option header h1 {
+    font-size: auto !important;
+  }
+  .Option .TableArea {
+    width: 100% !important;
+    max-height: 560px !important;
+    position: relative !important;
+    left: 0 !important;
+  }
+  table tbody tr {
+    font-size: 1.7rem !important;
+  }
+  table tbody tr td {
+    padding: 10px !important;
+  }
+  .Button {
+    width: 320px !important;
+    height: 55px !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 1900px) {
+  .Home header {
+    font-size: 1.5rem !important;
+  }
+  .UserData {
+    font-size: 1.5rem;
+    margin-top: 0 !important;
+  }
+  .UserData .Data textarea {
+    width: 899px !important;
+    height: 400px !important;
+  }
+  .Button {
+    width: 520px !important;
+    height: 65px !important;
+    font-size: 1.4rem !important;
+  }
+}
