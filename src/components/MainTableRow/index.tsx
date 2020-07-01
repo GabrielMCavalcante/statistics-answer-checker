@@ -20,6 +20,7 @@ function MainTableRow(rowData: RowData) {
     const parsedXi = formatValue(rowData.xi)
     const parsedFi = formatValue(rowData.fi)
     const parsedFr = formatValue(rowData.fr) + '%'
+    const parsedFac = formatValue(rowData.fac)
     const parsedFacr = formatValue(rowData.facr) + '%'
 
     const rowLabels = [
@@ -28,7 +29,7 @@ function MainTableRow(rowData: RowData) {
         parsedXi,
         parsedFi,
         parsedFr,
-        rowData.fac,
+        parsedFac,
         parsedFacr
     ]
 
