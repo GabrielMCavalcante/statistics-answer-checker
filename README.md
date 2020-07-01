@@ -1,4 +1,4 @@
-# Statistics Study Helper
+# Statistics Answer Checker
 
 ![Project Image](src/github/frontpage.jpg)
 
@@ -39,7 +39,7 @@ To use this web application, go to this [link](https://google.com) and then foll
 
 ![How to use](img/results.gif)
 
-[Back To The Top](#statistics-study-helper)<br>
+[Back To The Top](#statistics-answer-checker)<br>
 [Back To Table of Contents](#index)
 
 ### License
@@ -66,7 +66,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#statistics-study-helper)<br>
+[Back To The Top](#statistics-answer-checker)<br>
 [Back To Table of Contents](#index)
 
 ### About
@@ -75,5 +75,5 @@ SOFTWARE.
 
 - LinkedIn - [Gabriel Cavalcante](https://www.linkedin.com/in/gabriel-cavalcante-4182061a2)
 
-[Back To The Top](#statistics-study-helper)<br>
+[Back To The Top](#statistics-answer-checker)<br>
 [Back To Table of Contents](#index)
