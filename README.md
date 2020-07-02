@@ -40,7 +40,7 @@ To install this application project on your local machine, follow the steps belo
 
 ### How To Use
 
-To use this web application, go to this [link](https://google.com) and then follow the gif steps below.
+To use this web application, go to this [link](https://gabrielmcavalcante.github.io/statistics-answer-checker/) and then follow the gif steps below.
 
 ![How to use](src/github/results.gif)
 
