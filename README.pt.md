@@ -42,7 +42,7 @@ Para instalar este projeto em sua máquina local, siga as etapas abaixo.
 
 ### Como usar
 
-Para usar este aplicativo na web, acesse este [link](https://google.com) e siga as etapas do gif abaixo.
+Para usar este aplicativo na web, acesse este [link](https://gabrielmcavalcante.github.io/statistics-answer-checker/) e siga as etapas do gif abaixo.
 
 ![Como usar](src/github/results.gif)
 
