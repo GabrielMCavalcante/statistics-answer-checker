@@ -29,9 +29,9 @@ Leia este arquivo em sua linguagem preferida:
 
 ## Sumário
 
-- [Instalação](#instalacao)
+- [Instalação](#instalação)
 - [Como usar](#como-usar)
-- [Licença](#licenca)
+- [Licença](#licença)
 - [Sobre](#sobre)
 
 ### Instalação
@@ -49,7 +49,7 @@ Para usar este aplicativo na web, acesse este [link](https://gabrielmcavalcante.
 ![Como usar](src/github/results.gif)
 
 [Voltar ao topo](#statistics-answer-checker)<br>
-[Voltar ao sumário](#sumario)
+[Voltar ao sumário](#sumário)
 
 ### Licença
 
@@ -85,4 +85,4 @@ SOFTWARE.
 - LinkedIn - [Gabriel Cavalcante](https://linkedin.com/in/gabrielmcavalcante)
 
 [Voltar ao topo](#statistics-answer-checker)<br>
-[Voltar ao sumário](#sumario)
+[Voltar ao sumário](#sumário)
