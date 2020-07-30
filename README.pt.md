@@ -1,4 +1,6 @@
-# <img src="src/github/icon.png" alt="Project Logo" width="30" height="30" /> Statistics Answer Checker
+<p align="center"><img src="src/github/icon.png" alt="Project Logo" width="100" height="100" /></p>
+
+# Statistics Answer Checker
 
 ![Project Image](src/github/frontpage.jpg)
 
